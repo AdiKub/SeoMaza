@@ -3,12 +3,20 @@ body {
     margin: 0;
     font-family: 'Roboto';
 }
+h1 {
+    margin: 0;
+}
 
 .header {
   display: flex;
+ 
   flex-direction: column;
 }
 .top_header {
+    z-index: 1;
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+}
+.orange_header {
     display: flex;
     justify-content: center;
     background-color: #ff6a40; 
@@ -27,8 +35,11 @@ body {
     height: 40px;
     color: white;
 } 
+.top_header_container_contacts {
+    margin-left: 50px;
+}
 .phone_namber, .mail{
-    margin-right: 40px;
+    margin-right: 50px;
     font-size: 0.8em;
 }
 .fa-phone, .fa-envelope {
@@ -39,7 +50,96 @@ body {
     font-size: 0.75em;
 }
 .gray_header {
-    height: 85px;
+    display: flex;
+    justify-content: center;
     background-color:  #f3f5f5;
 }
+.gray_header_container{
+    width: 1140px;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    margin-top: 15px;
+}
+.header_navigation_list {
+    font-size: 0.8em;
+    display: flex; 
+    margin-right: 35px; 
+}
 
+.header_navigation_item {
+    color: #8d8d8d;
+    list-style: none;
+    margin-left: 33px;
+}
+.header_navigation_link {
+    text-transform: uppercase;
+    color: #8d8d8d;
+    text-decoration: none;
+    font-weight: bold;
+}
+.top_header_button {
+    font-size: 0.85em;
+    padding: 15px 21px 15px 21px;
+    background-color: #1eba87;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+.main_header {
+    height: 775px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    z-index: 0;
+}
+.main_header_container{
+    display: flex;
+    align-items: center;
+    width: 1140px;
+}
+.main_header_wrapper {
+    height: 470px;
+    color: #454547;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    margin-right: 30px;  
+}
+.main_header_text {
+    font-size: 0.95em;
+}
+.fa-check {
+    margin-right: 30px;
+    color: #ff6a40;
+}
+
+.main_header_button{
+    margin-top: 30px;
+    width: 180px;
+    padding: 20px;
+    border: 0;
+    background-color:#ff6a40;
+    color: white;
+    border-radius: 5px;
+}
+.main_header_title {
+    font-size: 3.8em;
+    font-weight: bold;
+}
+.one {
+    color: #ff6a40;
+}
+
+
+
+.footer {
+   background-color: #ff6a40; 
+   height: 930px;
+   margin-bottom: 30px;
+}
