@@ -15,23 +15,29 @@ function css() {
   }
   
 function html() {
-    return src('./js/**/*.js')
+    return src('./templates/**/*.html')
     .pipe(dest('./dist/'));
   }
 
 function js() {
-    return src('./templates/**/*.html')
+    return src('./js/**/*.js')
     .pipe(dest('./dist/js'));
   }
 
-watch(['sass/*.scss', '!input/something.js'], function(cb) {
-  // body omitted
-  cb();
-});
+
+const dev = () =>{
+    watch('./sass/**/*.scss', css)
+    watch('./js/**/*.js', js)
+    watch('./templates/**/*.html', html)
+}
+
+
+
  
 
   exports.html = html;
   exports.js = js;
   exports.css = css;
   exports.clean = clean;
+  exports.dev = dev;
   exports.default = series(clean, parallel(js, html, css));
