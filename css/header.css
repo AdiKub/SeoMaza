@@ -1,0 +1,45 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.top_header {
+    display: flex;
+    justify-content: center;
+    background-color: #ff6a40; 
+}
+
+.top_header_login {
+    color: white;
+    font-size: 1.07em;
+    margin-right: 5px;
+}
+.top_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1140px;
+    height: 40px;
+    color: white;
+} 
+.phone_namber, .mail{
+    margin-right: 40px;
+    font-size: 0.8em;
+}
+.fa-phone, .fa-envelope {
+    margin-right: 10px;
+}
+.fab {
+    margin-left: 29px;
+    font-size: 0.75em;
+}
+.gray_header {
+    height: 85px;
+    background-color:  #f3f5f5;
+}
+
