@@ -50,7 +50,8 @@ p {
 .fa-phone, .fa-envelope {
     margin-right: 10px;
 }
-.fab {
+.header_sosial_links {
+    color: white;
     margin-left: 29px;
     font-size: 0.75em;
 }
