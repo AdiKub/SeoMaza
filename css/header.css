@@ -223,11 +223,11 @@ p {
 }
 
 .footer_copyright {
-    margin-top: 110px;
-    border-top: 3px solid white;
+    margin-top: 57px;
+    border-top: 1px solid white;
     color: white;
-    width: 960px;
+    width: 920px;
     display: flex;
     justify-content: center;
-    padding: 25px;
+    padding: 22px;
 }
