@@ -4,11 +4,6 @@ const del = require('del');
 sass.compiler = require('node-sass');
 const googleWebFonts = require('gulp-google-webfonts');
 
-
-
-
-
-
 const clean = () => del(['dist'])
 
 const css =()=> src('./sass/**/*.scss')
@@ -27,8 +22,6 @@ const fortawesome =()=> {
   return src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
   .pipe(dest('./dist/webfonts/'));
 }
-
-
 
 const watchFile = () =>{
     watch('./sass/**/*.scss', css)
@@ -51,7 +44,7 @@ const fonts = () => {
 const build = series(clean, parallel(js, html, css, imgs, fortawesome, fonts));
 const runDev = series(build, watchFile)
 
-  exports.clean = clean;
-  exports.runDev = runDev;
-  exports.build = build;
-  exports.default = build;
+exports.clean = clean;
+exports.runDev = runDev;
+exports.build = build;
+exports.default = build;
