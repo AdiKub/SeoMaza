@@ -23,21 +23,22 @@ function js() {
     return src('./js/**/*.js')
     .pipe(dest('./dist/js'));
   }
-
+  
+function imgs() {
+    return src('./images/**/*')
+    .pipe(dest('./dist/images'));
+  }
 
 const dev = () =>{
     watch('./sass/**/*.scss', css)
     watch('./js/**/*.js', js)
+    watch('./images/**/*', imgs)
     watch('./templates/**/*.html', html)
 }
-
-
-
- 
-
+  exports.imgs = imgs; 
   exports.html = html;
   exports.js = js;
   exports.css = css;
   exports.clean = clean;
   exports.dev = dev;
-  exports.default = series(clean, parallel(js, html, css));
+  exports.default = series(clean, parallel(js, html, css, imgs));
