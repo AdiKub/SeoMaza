@@ -1,3 +1,231 @@
 @import "variables";
 @import "header";
 @import "footer";
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main--container__aboute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1140px;    
+}
+
+.aboute--title {
+    height: 35px;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: row;
+    color: $gyCl;
+    font-size: 1.6em;
+    .orange {
+        color: $orCl;
+        margin-right: 5px;
+    }
+} 
+.aboute__text {
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: $gyCl;
+    padding: 0px 170px; 
+}
+.aboute__boxs_container {
+    margin-top: 70px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboute__boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: $grCl;
+    width: 298px;
+    height: 260px;
+    border-radius: 10px;
+    padding: 0px 32px;
+    .title {
+        margin-top: 50px;
+        font-size: 1.4em;
+        font-weight: 400;
+    }  
+    span {
+        margin-top: 25px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0.9em;
+    }
+    p {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    &:hover {
+        background-color: $orCl;
+        box-shadow:  0px 10px 50px gray;
+        width: 308px;
+        transition: 100ms;
+    }
+}  
+.information {
+    margin-top: 87px;
+    display: flex;
+}
+
+.information__wrapper {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    span {
+        margin-top: 30px;
+        line-height: 23px;
+    }  
+    .orange {
+        color: $orCl;
+    }
+}
+.informaion_buttons {
+    width: 350px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    .information-button {
+        height: 50px;
+        width: 140px;
+        border: 0;
+        background-color: $grCl;
+        color: white;
+        border-radius: 5px;
+        &:hover {
+            background-color: $orCl;
+            transition: 50ms;
+            
+        }
+    }
+}
+.information__img {
+    margin-left: 23px;
+}
+
+.main_statistic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 130px;
+    background-color: $orCl;
+}
+.main_statistic_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1140px;
+    height: 330px;
+}
+.main_statistic_wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .fas, .far{
+        font-size: 3.5em;
+    }
+    .count {
+        margin-top: 30px;
+        font-size: 1.75em;
+    }
+    p {
+        margin-top: 12px;
+        font-size: 1.2em;
+    }
+}
+.main_sercices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        margin-top: 10px;
+        line-height: 25px;
+        text-align: center;
+        padding: 0 260px;
+    }
+}
+.main_sercices_title {
+    font-size: 1.7em;
+    margin-top: 125px;
+    display: flex;
+    .orange {
+        color: $orCl;
+        margin-right: 6px;
+    }
+}
+
+.sercices__boxs_container {
+    margin-top: 70px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sercices__boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: $orCl;
+    width: 298px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 0px 32px;
+    .title {
+        margin-top: 50px;
+        font-size: 1.4em;
+        font-weight: 400;
+    }  
+    span {
+        padding: 0;
+        margin-top: 25px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0.9em;
+    }
+    p {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    &:hover {
+        background-color: $grCl;
+        box-shadow:  0px 10px 50px gray;
+        width: 308px;
+        transition: 100ms;
+    }
+    img {
+        margin-top: 60px;
+    }
+
+}
+.sercices-button {
+    margin-top: 90px;
+    height: 50px;
+    width: 140px;
+    border: 0;
+    background-color: $orCl;
+    color: white;
+    border-radius: 5px;
+    &:hover {
+        background-color: $grCl;
+        transition: 50ms;
+        
+    }
+}
+
+.main__case__studio {
+    margin-top: 130px;
+}
