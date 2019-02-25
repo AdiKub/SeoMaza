@@ -1,8 +1,333 @@
 @import "main";
 
-h2 {
-    margin: 0;
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-button {
-    padding: 0;
+.main--container__aboute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1140px;    
+}
+
+.aboute--title {
+    height: 35px;
+    margin-top: 125px;
+    display: flex;
+    flex-direction: row;
+    color: $gyCl;
+    font-size: 1.6em;
+    .orange {
+        color: $orCl;
+        margin-right: 5px;
+    }
+} 
+
+.aboute__text {
+  @include spamStyle;
+}
+.aboute__boxs_container {
+    margin-top: 83px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboute__boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: $grCl;
+    width: 298px;
+    height: 260px;
+    border-radius: 10px;
+    padding: 0px 32px;
+    .title {
+        margin-top: 50px;
+        font-size: 1.4em;
+        font-weight: 400;
+    }  
+    span {
+        margin-top: 25px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0.9em;
+    }
+    p {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    &:hover {
+        background-color: $orCl;
+        box-shadow:  0px 10px 50px gray;
+        width: 308px;
+        transition: 100ms;
+    }
+}  
+.information {
+    margin-top: 87px;
+    display: flex;
+}
+
+.information__wrapper {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    span {
+        margin-top: 30px;
+        line-height: 23px;
+    }  
+    .orange {
+        color: $orCl;
+    }
+}
+
+.informaion_buttons {
+    width: 350px;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    .information-button {
+        @include btstyle;
+        background-color: $grCl;
+        &:hover {
+            background-color: $orCl;
+            transition: 50ms;
+            
+        }
+    }
+}
+
+.information__img {
+    margin-left: 23px;
+}
+
+.main_statistic{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 130px;
+    background-color: $orCl;
+}
+.main_statistic_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1140px;
+    height: 330px;
+}
+.main_statistic_wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .fas, .far{
+        font-size: 3.5em;
+    }
+    .count {
+        margin-top: 30px;
+        font-size: 1.75em;
+    }
+    p {
+        margin-top: 12px;
+        font-size: 1.2em;
+    }
+}
+.main_sercices{
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        @include spamStyle;
+        
+    }
+}
+.main_sercices_title {
+    font-size: 1.7em;
+    margin-top: 125px;
+    display: flex;
+    .orange {
+        color: $orCl;
+        margin-right: 6px;
+    }
+}
+
+.sercices__boxs_container {
+    margin-top: 70px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sercices__boxs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: $orCl;
+    width: 298px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 0px 32px;
+    .title {
+        margin-top: 50px;
+        font-size: 1.4em;
+        font-weight: 400;
+    }  
+    span {
+        padding: 0;
+        margin-top: 25px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 0.9em;
+    }
+    p {
+        margin-top: 40px;
+        font-weight: 500;
+        font-size: 1em;
+    }
+    &:hover {
+        background-color: $grCl;
+        box-shadow:  0px 10px 50px gray;
+        width: 308px;
+        transition: 100ms;
+    }
+    img {
+        margin-top: 60px;
+    }
+
+}
+.sercices-button {
+    @include btstyle;
+    margin-top: 90px;
+    background-color: $orCl;
+    &:hover {
+        background-color: $grCl;
+        transition: 50ms;
+        
+    }
+}
+.main__studio__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    background-color: $bgGyCl;
+}
+.main__case__studio {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_studio_text {
+  @include spamStyle;
+}
+.studio__boxs__container {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    .orange {
+        background-color: $orCl;
+    }
+}
+.studio__boxs__container_1 {
+    display: flex;
+}
+.studio_box_wrapper {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 360px;
+    height: 410px;
+    background-color: $grCl;
+    padding-bottom: 5px;
+    &:hover {
+        @include hoverShadow;
+        width: 365px;
+    }
+}
+.box__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    h3 {
+        margin-top: 30px;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+}
+.studio_img {
+    margin: 57px 40px;
+}
+
+.studio_button {
+    @include btstyle;
+    background-color: $orCl;
+    margin-top: 75px;
+    margin-bottom: 130px;
+    width: 180px;
+    &:hover {
+        background-color: $grCl;
+    }
+}
+
+.main_web_checker {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 370px;
+    background-color: $orCl;
+}
+
+.main_web_checker_container {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    .checker_title {
+        font-size: 2.7em;
+        font-weight: 400;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+    .checker_title_2 {
+        font-size: 2.6em;
+    }
+} 
+.checker_input_container {
+    display: flex;
+    margin-top: 45px;
+}
+.checker__input {
+    padding-left: 50px;
+    background: none;
+    border: 3px solid white;
+    width: 600px;
+    height: 60px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.checker__input::placeholder {
+    color: white;
+    font-size: 1.5em;
+}
+
+.checker__button {
+    background-color: white;
+    border: none;
+    color: $orCl;
+    padding: 0 50px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

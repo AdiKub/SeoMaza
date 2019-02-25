@@ -1,0 +1,20 @@
+@mixin btstyle {
+    height: 50px;
+    width: 140px;
+    border: 0;
+    color: white;
+    border-radius: 5px;
+}
+
+@mixin spamStyle {
+    margin-top: 20px;
+    color: $gyCl;
+    line-height: 25px;
+    padding: 0 170px;
+    text-align: center;
+}
+
+@mixin hoverShadow {
+    box-shadow:  0px 10px 50px gray;
+    transition: 100ms;
+}
