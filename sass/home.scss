@@ -144,15 +144,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 130px;
     span {
         @include spamStyle;
         
     }
+
 }
 .main_sercices_title {
     font-size: 1.7em;
     margin-top: 125px;
     display: flex;
+    color: $gyCl;
     .orange {
         color: $orCl;
         margin-right: 6px;
@@ -218,7 +221,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 130px;
+    
     background-color: $bgGyCl;
 }
 .main__case__studio {
@@ -229,6 +232,7 @@
 }
 .main_studio_text {
   @include spamStyle;
+  color: $gyCl;
 }
 .studio__boxs__container {
     margin-top: 85px;
@@ -330,4 +334,178 @@
     padding: 0 50px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+
+.plan__boxs__container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+}
+.plan__box {
+    width: 360px;
+    background-color: $orCl;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    h2 {
+        margin: 0;
+        margin-top: 10px;
+        color: white;
+        font-size: 3.5em;
+    }
+    h3 {
+        margin: 0;
+        margin-top: 15px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.5em;
+    } 
+    &:hover {
+        background-color: $grCl;
+        @include hoverShadow;
+        width: 365px;
+        .plan__button {
+            background-color: $grCl;
+        }
+        
+    }
+   
+}
+.plan_img_container {
+    margin-top: 10px;
+    height: 110px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.plan_box_wrapper {
+    width: 360px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 320px;
+    background-color: white;
+    color: rgb(167, 167, 167);
+    .fas {
+        color: rgb(167, 167, 167);
+    }
+}
+.box__texts {
+    margin: 20px;
+    p {
+        margin: 20px;
+    }
+}
+
+.plan__button {
+    @include btstyle;
+    background-color: $orCl;
+}
+.plan__boxs__container {
+    .green {
+        background-color: $grCl;
+    }
+}
+.plan__box_2 {
+    width: 260px;
+    background-color: $orCl;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+    img {
+        margin-top: 20px;
+    }
+    &:hover {
+        width: 265px;
+        @include hoverShadow;
+        transition: 200ms;
+        p {
+            color: $grCl;
+        }
+        .plan_hover_menu {
+            transition: 500ms;
+            opacity: 0.8;
+            .fa-facebook-f {
+                transition: 700ms;
+                margin-right: 90px;
+            }
+            .fa-linkedin-in {
+                transition: 700ms;
+                margin-top: 90px;
+            }
+            .fa-vimeo-v {
+                transition: 700ms;
+                margin-left: 90px;
+            }
+            .fa-twitter {
+                transition: 700ms;
+                margin-bottom: 90px;
+            } 
+        }
+    }
+}
+.plan__case__studio {
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+.plan_box_wrapper_2 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    h3 {
+        color: $gyCl;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    p {
+        color: $orCl;
+        font-style: italic;
+        font-weight: 800;
+        margin: 0;
+        margin-top: 10px;
+    }
+    span {
+        color: $gyCl;
+        font-size: 0.9em;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 20px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+}
+
+.plan_hover_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gyCl;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 2px;
+    opacity: 0;
+    .plan_sosial_links {
+        position: absolute;
+        color: white;
+    }
+    
+ 
 }
