@@ -2,6 +2,10 @@
 @import "header";
 @import "footer";
 
+body{
+    background-color: #f9f9f9;
+}
+
 h2 {
     margin: 0;
 }
@@ -14,4 +18,11 @@ h3 {
 
 ul {
     padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
 }

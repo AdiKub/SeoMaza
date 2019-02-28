@@ -15,7 +15,7 @@ const browserSync = (done) => {
   browsersync.init({
     server: {
       baseDir: "./dist/",
-      index: "home.html"
+      index: "blog_2.html"
     }
   });
   done();
