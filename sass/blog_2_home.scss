@@ -211,6 +211,10 @@
         font-weight: 400;
         font-size: 1.4em;
         color: $gyCl;
+        &:hover {
+            color: $orCl;
+            font-weight: 600;
+        }
     }
 }
 
