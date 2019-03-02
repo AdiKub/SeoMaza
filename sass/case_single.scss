@@ -1,0 +1,71 @@
+@import "main";
+
+
+.main__case__studio {
+    margin: 90px 0;
+}
+
+.case_single_texts{
+    display: flex;
+    flex-direction: column;
+    color: $gyCl;
+    margin-top: 40px;
+    .case_single_text {
+        margin-top: 40px;
+    }
+}
+
+.studio_box_wrapper {
+    margin-left: 0;
+}
+
+.studio__boxs__container {
+    margin-top: 40px;
+}
+
+.studio__boxs__container_1 {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+}
+.case_single_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+
+.info_items_background {
+    opacity: 0.8;
+    position: absolute;
+    background-color: $orCl;
+    height: 30px;
+    width: 1140px;
+}
+
+.images_info_list {
+    height: 30px;
+    width: 1140px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.images_info_items {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    
+}
+
+.header_title {
+    background-color: $orCl;
+}
+
+.info_items_text {
+    margin-left: 20px;
+}
