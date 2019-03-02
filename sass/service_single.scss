@@ -1,0 +1,47 @@
+@import "main";
+
+.main-service_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1140px;
+}
+
+.service_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.service_texts {
+    display: flex;
+    flex-direction: column;
+    .service_text {
+        margin-top: 40px;
+        padding-right: 50px;
+        color: $gyCl;
+    }
+    .service_texts_title {
+        color: $gyCl;
+        font-size: 1.85em;
+    }
+}
+
+.info {
+    margin-left: 30px;
+}
+
+.service_information_item {
+    font-size: 0.9em;
+    color: $gyCl;
+    margin-top: 20px;
+}
+
+.sercices_container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title {
+    background-color: $orCl;
+}
